@@ -1,0 +1,17 @@
+QuoteAndBillingManagementSystem/*/bin/
+QuoteAndBillingManagementSystem/*/obj/
+QuoteAndBillingManagementSystem/packages/
+*.suo
+QuoteAndBillingManagementSystem/buildreports/
+QuoteAndBillingManagementSystem/node_modules/
+QuoteAndBillingManagementSystem/test-results.xml
+*.user
+QuoteAndBillingManagementSystem/bin/
+nunit-result.xml
+*.swp
+QuoteAndBillingManagementSystem/coverage
+buildreports
+QuoteAndBillingManagementSystem/.vs/config/applicationhost.config
+QuoteAndBillingManagementSystem/OpenCover/
+*.ncrunchproject
+*.ncrunchsolution
