@@ -15,6 +15,7 @@ namespace NSubstitute
 #if !NET40
     using System.Threading;
     using System.Threading.Tasks;
+    using EntityFramework.Testing;
 #endif
     using NSubstitute.Core;
 

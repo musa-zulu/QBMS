@@ -8,14 +8,14 @@ namespace QBMS.DB.Repositories
 {
     public class RoleRepository : IRolesRepository
     {
-        private readonly IQBMSDbContext _iQBMSDbContext;
+        private readonly IQBMSDbContext _qBMSDbContext;
 
-        public RoleRepository(IQBMSDbContext iQBMSDbContext)
+        public RoleRepository(IQBMSDbContext qBMSDbContext)
         {
-            _iQBMSDbContext = iQBMSDbContext ?? throw new ArgumentNullException(nameof(iQBMSDbContext));
+            _qBMSDbContext = qBMSDbContext ?? throw new ArgumentNullException(nameof(qBMSDbContext));
         }
         
-        public Roles GetRoleById(string roleId) =>  _iQBMSDbContext.Roles.FirstOrDefault(roles => roles.Id == roleId);        
-        public List<Roles> GetAllRoles() => _iQBMSDbContext.Roles.ToList();        
+        public Roles GetRoleById(string roleId) => _qBMSDbContext.Roles.FirstOrDefault(roles => roles.Id == roleId);        
+        public List<Roles> GetAllRoles() => _qBMSDbContext.Roles.ToList();        
     }
 }

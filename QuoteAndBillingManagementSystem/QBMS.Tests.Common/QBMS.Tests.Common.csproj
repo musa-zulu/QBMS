@@ -45,8 +45,8 @@
     <Reference Include="ExcelUpload, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\excellupload.1.0.0\lib\ExcelUpload.dll</HintPath>
     </Reference>
-    <Reference Include="FluentMigrator, Version=1.6.1.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
-      <HintPath>..\packages\FluentMigrator.1.6.1\lib\40\FluentMigrator.dll</HintPath>
+    <Reference Include="FluentMigrator, Version=1.6.2.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentMigrator.1.6.2\lib\40\FluentMigrator.dll</HintPath>
     </Reference>
     <Reference Include="HttpPostedFileHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HttpPostedFileHelper.1.2.0\lib\net452\HttpPostedFileHelper.dll</HintPath>
@@ -83,16 +83,16 @@
       <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="PeanutButter.FluentMigrator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PeanutButter.FluentMigrator.1.2.210\lib\net452\PeanutButter.FluentMigrator.dll</HintPath>
+      <HintPath>..\packages\PeanutButter.FluentMigrator.1.2.211\lib\net452\PeanutButter.FluentMigrator.dll</HintPath>
     </Reference>
     <Reference Include="PeanutButter.RandomGenerators, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PeanutButter.RandomGenerators.1.2.210\lib\net452\PeanutButter.RandomGenerators.dll</HintPath>
+      <HintPath>..\packages\PeanutButter.RandomGenerators.1.2.211\lib\net452\PeanutButter.RandomGenerators.dll</HintPath>
     </Reference>
     <Reference Include="PeanutButter.TestUtils.Generic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PeanutButter.TestUtils.Generic.1.2.210\lib\net452\PeanutButter.TestUtils.Generic.dll</HintPath>
+      <HintPath>..\packages\PeanutButter.TestUtils.Generic.1.2.211\lib\net452\PeanutButter.TestUtils.Generic.dll</HintPath>
     </Reference>
     <Reference Include="PeanutButter.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PeanutButter.Utils.1.2.210\lib\net452\PeanutButter.Utils.dll</HintPath>
+      <HintPath>..\packages\PeanutButter.Utils.1.2.211\lib\net452\PeanutButter.Utils.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />

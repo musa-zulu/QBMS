@@ -2,30 +2,27 @@
 using QBMS.Core.Domain;
 using NUnit.Framework;
 using PeanutButter.TestUtils.Generic;
+using System.Collections.Generic;
 
 namespace QBMS.Core.Tests.Domain
 {
     [TestFixture]
-    public class TestClient
+    class TestQuote
     {
         [Test]
         public void Construct()
         {
-            Assert.DoesNotThrow(() => new Client());
+            Assert.DoesNotThrow(() => new Quote());
         }
 
         [TestCase("Id", typeof(Guid))]
-        [TestCase("FirstName", typeof(string))]
-        [TestCase("Surname", typeof(string))]
-        [TestCase("Email", typeof(string))]
-        [TestCase("Title", typeof(Title))]
-        [TestCase("TitleId", typeof(Guid))]
-        [TestCase("ContactNumber", typeof(string))]
-
-        public void Client_Property_ShouldExist(string propertyName, Type propertyType)
+        [TestCase("BillingAddres", typeof(string))]
+        [TestCase("Description", typeof(string))]
+        [TestCase("QuoteItems", typeof(ICollection<ClientsQuoteItem>))]
+        public void Quote_Property_ShouldExist(string propertyName, Type propertyType)
         {
             //---------------Set up test pack-------------------
-            var sut = typeof (Client);
+            var sut = typeof(Quote);
             //---------------Assert Precondition----------------
 
             //---------------Execute Test ----------------------

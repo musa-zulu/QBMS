@@ -6,26 +6,26 @@ using PeanutButter.TestUtils.Generic;
 namespace QBMS.Core.Tests.Domain
 {
     [TestFixture]
-    public class TestClient
+    class TestClientsQuoteItem
     {
         [Test]
         public void Construct()
         {
-            Assert.DoesNotThrow(() => new Client());
+            Assert.DoesNotThrow(() => new ClientsQuoteItem());
         }
 
         [TestCase("Id", typeof(Guid))]
-        [TestCase("FirstName", typeof(string))]
-        [TestCase("Surname", typeof(string))]
-        [TestCase("Email", typeof(string))]
-        [TestCase("Title", typeof(Title))]
-        [TestCase("TitleId", typeof(Guid))]
-        [TestCase("ContactNumber", typeof(string))]
+        [TestCase("ClientId", typeof(Guid))]
+        [TestCase("Client", typeof(Client))]
+        [TestCase("QuoteId", typeof(Guid))]
+        [TestCase("Quote", typeof(Quote))]
+        [TestCase("DateQuoted", typeof(DateTime))]
+        [TestCase("DateAccepted", typeof(DateTime?))]
 
         public void Client_Property_ShouldExist(string propertyName, Type propertyType)
         {
             //---------------Set up test pack-------------------
-            var sut = typeof (Client);
+            var sut = typeof(ClientsQuoteItem);
             //---------------Assert Precondition----------------
 
             //---------------Execute Test ----------------------

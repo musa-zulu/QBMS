@@ -18,7 +18,7 @@ namespace QBMS.DB.Tests.Repositories
         }
 
         [Test]
-        public void Construct_GivenLendingLibraryDbContextIsNull_ShouldThrow()
+        public void Construct_GivenQBMSDbContexttIsNull_ShouldThrow()
         {
             //---------------Set up test pack-------------------            
             //---------------Assert Precondition----------------
@@ -29,7 +29,7 @@ namespace QBMS.DB.Tests.Repositories
         }
 
         [Test]
-        public void GetRoleById_GivenExistingForId_ShouldRole()
+        public void GetRoleById_GivenExistingForId_ShouldReturnRole()
         {
             //---------------Set up test pack-------------------
             var roles = new RoleBuilder().WithRandomProps().Build();
@@ -43,7 +43,7 @@ namespace QBMS.DB.Tests.Repositories
         }
 
         [Test]
-        public void GetAllRoles_GivenOneRole_ShouldRole()
+        public void GetAllRoles_GivenOneRole_ShouldReturnRole()
         {
             //---------------Set up test pack-------------------
             var role = new RoleBuilder().WithRandomProps().Build();
@@ -59,7 +59,7 @@ namespace QBMS.DB.Tests.Repositories
         }
 
         [Test]
-        public void GetAllRoles_GivenTwoRoles_ShouldRole()
+        public void GetAllRoles_GivenTwoRoles_ShouldReturnTwoRoles()
         {
             //---------------Set up test pack-------------------
             var role1 = new RoleBuilder().WithRandomProps().Build();
@@ -78,7 +78,7 @@ namespace QBMS.DB.Tests.Repositories
         }
 
         [Test]
-        public void GetAllRoles_GivenThreeRoles_ShouldRole()
+        public void GetAllRoles_GivenThreeRoles_ShouldReturnThreeRoles()
         {
             //---------------Set up test pack-------------------
             var role1 = new RoleBuilder().WithRandomProps().Build();

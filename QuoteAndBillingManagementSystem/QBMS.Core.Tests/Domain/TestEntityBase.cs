@@ -14,24 +14,11 @@ namespace QBMS.Core.Tests.Domain
         }
 
         [Test]
-        public void IsNew_GivenIdNotSet_ShouldReturnTrue()
-        {
-            //---------------Set up test pack-------------------
-            var entityBaseImpl = new EntityBaseImpl();
-            //---------------Assert Precondition----------------
-
-            //---------------Execute Test ----------------------
-            var isNew = entityBaseImpl.IsNew();
-            //---------------Test Result -----------------------
-            Assert.IsTrue(isNew);
-        }
-
-        [Test]
         public void IsNew_GivenIdIsSet_ShouldReturnFalse()
         {
             //---------------Set up test pack-------------------
             var entityBaseImpl = new EntityBaseImpl();
-            entityBaseImpl.Id = new Guid();
+            entityBaseImpl.Id = Guid.NewGuid();
             //---------------Assert Precondition----------------
 
             //---------------Execute Test ----------------------
@@ -51,7 +38,7 @@ namespace QBMS.Core.Tests.Domain
             //---------------Execute Test ----------------------
             var ex = Assert.Throws<InvalidOperationException>(() => entityBaseImpl.IsNew());
             //---------------Test Result -----------------------
-            Assert.AreEqual("Id cannot be empty", ex.Message);
+            Assert.AreEqual("Id cannot be empty guid", ex.Message);
         }
 
         public class EntityBaseImpl : EntityBase

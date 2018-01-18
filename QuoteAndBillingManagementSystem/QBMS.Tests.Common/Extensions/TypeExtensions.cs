@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using QBMS.Tests.Common.Helpers;
 using NUnit.Framework;
-using PeanutButter.TestUtils.Generic;
+using PeanutButter.Utils;
 
 namespace QBMS.Tests.Common.Extensions
 {
