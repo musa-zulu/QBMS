@@ -59,9 +59,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\TestAddress.cs" />
+    <Compile Include="Domain\TestBankingDetails.cs" />
     <Compile Include="Domain\TestClient.cs" />
     <Compile Include="Domain\TestClientsQuoteItem.cs" />
+    <Compile Include="Domain\TestCompany.cs" />
     <Compile Include="Domain\TestEntityBase.cs" />
+    <Compile Include="Domain\TestInvoice.cs" />
     <Compile Include="Domain\TestQuote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

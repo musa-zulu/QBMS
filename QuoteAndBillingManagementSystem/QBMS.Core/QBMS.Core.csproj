@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Address.cs" />
+    <Compile Include="Domain\AddressType.cs" />
+    <Compile Include="Domain\BankingDetails.cs" />
     <Compile Include="Domain\Client.cs" />
     <Compile Include="Domain\Company.cs" />
     <Compile Include="Domain\EntityBase.cs" />
