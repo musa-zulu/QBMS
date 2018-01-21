@@ -14,12 +14,12 @@ namespace QBMS.Core.Tests.Domain
             Assert.DoesNotThrow(() => new Client());
         }
 
-        [TestCase("Id", typeof(Guid))]
+        [TestCase("Id", typeof(int))]
         [TestCase("FirstName", typeof(string))]
         [TestCase("Surname", typeof(string))]
         [TestCase("Email", typeof(string))]
         [TestCase("Title", typeof(Title))]
-        [TestCase("TitleId", typeof(Guid))]
+        [TestCase("TitleId", typeof(int))]
         [TestCase("ContactNumber", typeof(string))]
 
         public void Client_Property_ShouldExist(string propertyName, Type propertyType)

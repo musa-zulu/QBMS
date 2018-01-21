@@ -14,7 +14,7 @@ namespace QBMS.Core.Tests.Domain
             Assert.DoesNotThrow(() => new Invoice());
         }
 
-        [TestCase("Id", typeof(Guid))]
+        [TestCase("Id", typeof(int))]
         [TestCase("InvoiceDate", typeof(DateTime?))]
         [TestCase("Description", typeof(string))]
         [TestCase("QTY", typeof(int?))]
@@ -25,7 +25,7 @@ namespace QBMS.Core.Tests.Domain
         [TestCase("TotalDue", typeof(decimal))]
         [TestCase("OrderNumber", typeof(string))]
         [TestCase("M_OR_S", typeof(string))]
-        [TestCase("CompanyId", typeof(Guid))]
+        [TestCase("CompanyId", typeof(int))]
         [TestCase("Company", typeof(Company))]
         public void Client_Property_ShouldExist(string propertyName, Type propertyType)
         {

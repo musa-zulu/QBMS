@@ -4,15 +4,15 @@ namespace QBMS.Core.Domain
 {
     public abstract class EntityBase
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         public bool IsNew()
         {
-            if (Id == Guid.Empty)
+            if (Id < 0)
             {
-                throw new InvalidOperationException("Id cannot be empty guid");
+                throw new InvalidOperationException("Id cannot be less than 0");
             }
-            return Id == default(Guid);
+            return Id == default(int);
         }
     }
 }

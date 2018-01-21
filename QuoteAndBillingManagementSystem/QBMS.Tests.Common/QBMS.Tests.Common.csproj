@@ -114,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\FileBuilder.cs" />
+    <Compile Include="Builders\QuoteBuilder.cs" />
     <Compile Include="Builders\RoleBuilder.cs" />
     <Compile Include="Builders\TestDbContextBuilder.cs" />
     <Compile Include="Builders\TitleBuilder.cs" />

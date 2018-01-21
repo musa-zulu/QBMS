@@ -13,7 +13,7 @@ namespace QBMS.Core.Tests.Domain
         {
             Assert.DoesNotThrow(() => new BankingDetails());
         }
-        [TestCase("Id", typeof(Guid))]
+        [TestCase("Id", typeof(int))]
         [TestCase("AccountNumber", typeof(string))]
         [TestCase("BankName", typeof(string))]
         [TestCase("BankBranch", typeof(string))]

@@ -14,7 +14,7 @@ namespace QBMS.Core.Tests.Domain
             Assert.DoesNotThrow(() => new Company());
         }
 
-        [TestCase("Id", typeof(Guid))]
+        [TestCase("Id", typeof(int))]
         [TestCase("TradingName", typeof(string))]
         [TestCase("RegisteredName", typeof(string))]
         [TestCase("RegistrationNumber", typeof(string))]
@@ -22,8 +22,8 @@ namespace QBMS.Core.Tests.Domain
         [TestCase("Phone", typeof(long))]
         [TestCase("VatNumber", typeof(string))]
         [TestCase("EmailAddress", typeof(string))]
-        [TestCase("BankingDetailsId", typeof(Guid))]
-        [TestCase("AddressId", typeof(Guid))]
+        [TestCase("BankingDetailsId", typeof(int))]
+        [TestCase("AddressId", typeof(int))]
         [TestCase("Address", typeof(Address))]
         [TestCase("BankingDetails", typeof(BankingDetails))]
         public void Client_Property_ShouldExist(string propertyName, Type propertyType)

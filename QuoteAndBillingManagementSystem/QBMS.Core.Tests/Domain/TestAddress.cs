@@ -13,7 +13,7 @@ namespace QBMS.Core.Tests.Domain
         {
             Assert.DoesNotThrow(() => new Address());
         }
-        [TestCase("Id", typeof(Guid))]
+        [TestCase("Id", typeof(int))]
         [TestCase("HouseNumber", typeof(int))]
         [TestCase("StreetName", typeof(string))]
         [TestCase("Suburb", typeof(string))]

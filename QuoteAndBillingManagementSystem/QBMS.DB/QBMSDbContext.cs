@@ -52,7 +52,7 @@ namespace QBMS.DB
 
         public void SetStateToDelete(EntityBase entityList)
         {
-            Entry(entityList).State = entityList.Id == new Guid() ? EntityState.Detached : EntityState.Deleted;
+            Entry(entityList).State = entityList.Id == 0 ? EntityState.Detached : EntityState.Deleted;
         }
     }
 }

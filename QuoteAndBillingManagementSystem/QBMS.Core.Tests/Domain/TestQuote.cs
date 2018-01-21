@@ -15,8 +15,8 @@ namespace QBMS.Core.Tests.Domain
             Assert.DoesNotThrow(() => new Quote());
         }
 
-        [TestCase("Id", typeof(Guid))]
-        [TestCase("CompanyId", typeof(Guid))]
+        [TestCase("Id", typeof(int))]
+        [TestCase("CompanyId", typeof(int))]
         [TestCase("Company", typeof(Company))]
         [TestCase("BillingAddres", typeof(string))]
         [TestCase("Description", typeof(string))]

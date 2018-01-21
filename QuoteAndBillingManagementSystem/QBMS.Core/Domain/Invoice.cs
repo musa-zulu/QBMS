@@ -14,7 +14,7 @@ namespace QBMS.Core.Domain
         public decimal TotalDue { get; set; }
         public string OrderNumber { get; set; }
         public string M_OR_S { get; set; }
-        public virtual Guid CompanyId { get; set; }
+        public int CompanyId { get; set; }
         public virtual Company Company { get; set; }
     }
 }

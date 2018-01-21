@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace QBMS.Core.Domain
+﻿namespace QBMS.Core.Domain
 {
     public class Company : EntityBase
     {        
@@ -11,8 +9,8 @@ namespace QBMS.Core.Domain
         public long Phone { get; set; }
         public string VatNumber { get; set; }
         public string EmailAddress { get; set; }
-        public Guid BankingDetailsId { get; set; }
-        public Guid AddressId { get; set; }
+        public int BankingDetailsId { get; set; }
+        public int AddressId { get; set; }
         public virtual Address Address { get; set; }
         public virtual BankingDetails BankingDetails { get; set; }
     }

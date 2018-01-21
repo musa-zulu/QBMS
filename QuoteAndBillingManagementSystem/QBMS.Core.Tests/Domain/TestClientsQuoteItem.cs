@@ -14,10 +14,10 @@ namespace QBMS.Core.Tests.Domain
             Assert.DoesNotThrow(() => new ClientsQuoteItem());
         }
 
-        [TestCase("Id", typeof(Guid))]
-        [TestCase("ClientId", typeof(Guid))]
+        [TestCase("Id", typeof(int))]
+        [TestCase("ClientId", typeof(int))]
         [TestCase("Client", typeof(Client))]
-        [TestCase("QuoteId", typeof(Guid))]
+        [TestCase("QuoteId", typeof(int))]
         [TestCase("Quote", typeof(Quote))]
         [TestCase("DateQuoted", typeof(DateTime))]
         [TestCase("DateAccepted", typeof(DateTime?))]
