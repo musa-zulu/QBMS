@@ -6,7 +6,7 @@ using NSubstitute;
 using QBMS.Core.Domain;
 using QBMS.DB;
 
-namespace QBMS.Common.Builders
+namespace QBMS.Tests.Common.Builders
 {
     public class TestDbContextBuilder
     {

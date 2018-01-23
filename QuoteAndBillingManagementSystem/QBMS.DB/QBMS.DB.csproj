@@ -60,6 +60,7 @@
     <Compile Include="Mappings\TitleMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QBMSDbContext.cs" />
+    <Compile Include="Repositories\QuoteRepository.cs" />
     <Compile Include="Repositories\RoleRepository.cs" />
   </ItemGroup>
   <ItemGroup>

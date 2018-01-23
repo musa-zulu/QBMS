@@ -55,6 +55,7 @@
     <Compile Include="Domain\ClientsQuoteItem.cs" />
     <Compile Include="Domain\Roles.cs" />
     <Compile Include="Domain\Title.cs" />
+    <Compile Include="Interfaces\Repositories\IQuoteRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRolesRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

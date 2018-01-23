@@ -4,7 +4,6 @@ using QBMS.DB.Repositories;
 using QBMS.Tests.Common.Builders;
 using NSubstitute;
 using NUnit.Framework;
-using QBMS.Common.Builders;
 
 namespace QBMS.DB.Tests.Repositories
 {
