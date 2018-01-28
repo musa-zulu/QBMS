@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using QBMS.Core.Interfaces.Repositories;
 using QBMS.DB.Repositories;
 using QBMS.Tests.Common.Builders;
 using NSubstitute;

@@ -14,6 +14,10 @@ namespace QBMS.DB
         IDbSet<ClientsQuoteItem> ClientsQuoteItems { get; set; }
         IDbSet<Roles> Roles { get; set; }
         IDbSet<Client> Clients { get; set; }
+        IDbSet<Company> Companies { get; set; }
+        IDbSet<Address> Addresses { get; set; }
+        IDbSet<BankingDetails> BankingDetails { get; set; }
+        IDbSet<Invoice> Invoices { get; set; }
         void SetStateToDelete(EntityBase entityList);
     }
 
@@ -35,6 +39,10 @@ namespace QBMS.DB
             config.Add(new QuoteMap());
             config.Add(new ClientsQuoteItemMap());
             config.Add(new RoleMap());
+            config.Add(new CompanyMap());
+            config.Add(new AddressMap());
+            config.Add(new BankingDetailsMap());
+            config.Add(new InvoiceMap());
             base.OnModelCreating(modelBuilder);
         }
 
@@ -48,6 +56,10 @@ namespace QBMS.DB
         public IDbSet<ClientsQuoteItem> ClientsQuoteItems { get; set; }
         public IDbSet<Roles> Roles { get; set; }
         public IDbSet<Client> Clients { get; set; }
+        public IDbSet<Company> Companies { get; set; }
+        public IDbSet<Address> Addresses { get; set; }
+        public IDbSet<BankingDetails> BankingDetails { get; set; }
+        public IDbSet<Invoice> Invoices { get; set; }
 
         public void SetStateToDelete(EntityBase entityList)
         {

@@ -16,8 +16,7 @@ namespace QBMS.DB.Mappings
             this.ToTable(_Quote.TableName);
             this.Property(p => p.Id).HasColumnName(_Quote.Columns.QuoteId);
             this.Property(p=>p.BillingAddres).HasColumnName(_Quote.Columns.BillingAddress);
-            this.Property(p => p.Description).HasColumnName(_Quote.Columns.Description);
-            
+            this.Property(p => p.Description).HasColumnName(_Quote.Columns.Description);            
         }
     }
 }

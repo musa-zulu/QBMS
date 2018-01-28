@@ -3,7 +3,7 @@ using QBMS.Core.Domain;
 using _Client = QBMS.DB.DataConstants.Tables.Client;
 namespace QBMS.DB.Mappings
 {
-    public class ClientMap: EntityTypeConfiguration<Client>
+    public class ClientMap : EntityTypeConfiguration<Client>
     {
         public ClientMap()
         {

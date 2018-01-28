@@ -53,8 +53,12 @@
     <Compile Include="DBConstants.cs" />
     <Compile Include="InMemoryDB.cs" />
     <Compile Include="JsonHelpers.cs" />
+    <Compile Include="Mappings\AddressMap.cs" />
+    <Compile Include="Mappings\BankingDetailsMap.cs" />
     <Compile Include="Mappings\ClientsQuoteItemMap.cs" />
     <Compile Include="Mappings\ClientMap.cs" />
+    <Compile Include="Mappings\CompanyMap.cs" />
+    <Compile Include="Mappings\InvoiceMap.cs" />
     <Compile Include="Mappings\QuoteMap.cs" />
     <Compile Include="Mappings\RoleMap.cs" />
     <Compile Include="Mappings\TitleMap.cs" />
