@@ -41,6 +41,7 @@
                     public const string QuoteId = "QuoteId";
                     public const string Description = "Description";
                     public const string BillingAddress = "BillingAddress";
+                    public const string CompanyId = "CompanyId";
                 }
             }
 

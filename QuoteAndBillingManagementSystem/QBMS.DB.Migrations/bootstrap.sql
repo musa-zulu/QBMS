@@ -1,4 +1,4 @@
-﻿-- bootstrap script for SPAR.Liquor application
+﻿-- bootstrap script for QBMSWeb application
 -- Please run before attempting to start the application
 ------ uncomment next few lines if you'd *really* like to recreate the database
 -- use master;
@@ -13,7 +13,7 @@ use master;
 go
 if not exists (select name from master..syslogins where name = 'QBMSWeb')
     begin
-        create login LendingLibraryWeb with password = 'P4$$w0rd';
+        create login QBMSWeb with password = 'P4$$w0rd';
     end;
 go
 

@@ -23,12 +23,18 @@ namespace QBMS.DB
 
     public class QBMSDbContext : DbContext, IQBMSDbContext
     {
-        public QBMSDbContext(DbConnection connection) : base(connection, true)
+        static QBMSDbContext()
         {
-            
+            Database.SetInitializer<QBMSDbContext>(null);
         }
-        public QBMSDbContext(string nameOrConnectionString = "DefaultConnection") : base(nameOrConnectionString)
+
+        public QBMSDbContext(DbConnection connection) : base(connection, true)
+        {         
+        }
+        public QBMSDbContext(string nameOrConnectionString = null)
+            : base(nameOrConnectionString ?? "Name=QBMS")
         {
+            // Data Source=MUSA;Initial Catalog=LendingLibrary;User ID=sa
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
