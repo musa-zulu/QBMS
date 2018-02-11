@@ -4,7 +4,7 @@ using _Title = QBMS.DB.DataConstants.Tables.Title;
 namespace QBMS.DB.Migrations.Migrations
 {
     [Migration(201801311846)]
-    class _201801311846_CreateTitleTable : Migration
+    public class _201801311846_CreateTitleTable : Migration
     {
         public override void Up()
         {

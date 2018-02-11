@@ -34,7 +34,7 @@ namespace QBMS.DB
         public QBMSDbContext(string nameOrConnectionString = null)
             : base(nameOrConnectionString ?? "Name=QBMS")
         {
-            // Data Source=MUSA;Initial Catalog=LendingLibrary;User ID=sa
+            // Data Source=MUSA;Initial Catalog=QBMS;User ID=sa
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

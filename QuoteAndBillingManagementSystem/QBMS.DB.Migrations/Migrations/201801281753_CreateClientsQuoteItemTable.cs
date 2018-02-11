@@ -6,7 +6,7 @@ using _Quote = QBMS.DB.DataConstants.Tables.Quote;
 namespace QBMS.DB.Migrations.Migrations
 {
     [Migration(201801281753)]
-    class _201801281753_CreateClientsQuoteItemTable : Migration
+    public class _201801281753_CreateClientsQuoteItemTable : Migration
     {
         public override void Up()
         {

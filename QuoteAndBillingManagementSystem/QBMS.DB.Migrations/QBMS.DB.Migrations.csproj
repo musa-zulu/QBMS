@@ -63,6 +63,7 @@
     <Compile Include="Migrations\201801292001_CreateCompanyTable.cs" />
     <Compile Include="Migrations\201801311835_CreateInvoiceTable.cs" />
     <Compile Include="Migrations\201801311846_CreateTitleTable.cs" />
+    <Compile Include="Migrations\201802111621_PopulateTitleTable.cs" />
     <Compile Include="Migrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

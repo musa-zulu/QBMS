@@ -4,7 +4,7 @@ using _Address = QBMS.DB.DataConstants.Tables.Address;
 namespace QBMS.DB.Migrations.Migrations
 {
     [Migration(201801291934)]
-    class _201801291934_CreateAddressTable : Migration
+    public class _201801291934_CreateAddressTable : Migration
     {
         public override void Up()
         {

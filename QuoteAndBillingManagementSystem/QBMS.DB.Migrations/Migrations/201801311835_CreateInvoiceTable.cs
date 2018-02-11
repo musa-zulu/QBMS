@@ -5,7 +5,7 @@ using _Invoice = QBMS.DB.DataConstants.Tables.Invoice;
 namespace QBMS.DB.Migrations.Migrations
 {
     [Migration(201801311835)]
-    class _201801311835_CreateInvoiceTable : Migration
+    public class _201801311835_CreateInvoiceTable : Migration
     {
         public override void Up()
         {

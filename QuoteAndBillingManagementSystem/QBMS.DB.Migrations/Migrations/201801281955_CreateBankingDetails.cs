@@ -4,7 +4,7 @@ using _BankingDetails = QBMS.DB.DataConstants.Tables.BankingDetails;
 namespace QBMS.DB.Migrations.Migrations
 {
     [Migration(201801281955)]
-    class _201801281955_CreateBankingDetails : Migration
+    public class _201801281955_CreateBankingDetails : Migration
     {
         public override void Up()
         {

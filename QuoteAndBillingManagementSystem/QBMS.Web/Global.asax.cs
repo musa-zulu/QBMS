@@ -36,7 +36,7 @@ namespace QBMS.Web
 
         private string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["QBMS"].ToString();
+            return ConfigurationManager.ConnectionStrings["DefaultConnection"].ToString();
         }
 
         private void MigrateDatabaseWith(string connectionString)

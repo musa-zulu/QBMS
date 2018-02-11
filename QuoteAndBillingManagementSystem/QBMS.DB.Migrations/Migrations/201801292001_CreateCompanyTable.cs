@@ -6,7 +6,7 @@ using _Address = QBMS.DB.DataConstants.Tables.Address;
 namespace QBMS.DB.Migrations.Migrations
 {
     [Migration(201801292001)]
-    class _201801292001_CreateCompanyTable : Migration
+    public class _201801292001_CreateCompanyTable : Migration
     {
         public override void Up()
         {
@@ -18,7 +18,7 @@ namespace QBMS.DB.Migrations.Migrations
                 .WithColumn(_Table.Columns.Phone).AsInt64().Nullable()
                 .WithColumn(_Table.Columns.VatNumber).AsString().Nullable()
                 .WithColumn(_Table.Columns.EmailAddress).AsString().Nullable()                
-                .WithColumn(_Table.Columns.BankingDetailsId).AsInt32().NotNullable().ForeignKey("FK_Company_BsnkingDetails", _BankingDetails.TableName, _BankingDetails.Columns.BankingDetailsId)
+                .WithColumn(_Table.Columns.BankingDetailsId).AsInt32().NotNullable().ForeignKey("FK_Company_BankingDetails", _BankingDetails.TableName, _BankingDetails.Columns.BankingDetailsId)
                 .WithColumn(_Table.Columns.AddressId).AsInt32().NotNullable().ForeignKey("FK_Company_Address", _Address.TableName, _Address.Columns.AddressId)
                 .WithDefaultEntityColumns();
         }
