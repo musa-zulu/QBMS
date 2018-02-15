@@ -26,7 +26,7 @@ namespace QBMS.Core.Tests.Domain
         [TestCase("AddressId", typeof(int))]
         [TestCase("Address", typeof(Address))]
         [TestCase("BankingDetails", typeof(BankingDetails))]
-        public void Client_Property_ShouldExist(string propertyName, Type propertyType)
+        public void Company_Property_ShouldExist(string propertyName, Type propertyType)
         {
             //---------------Set up test pack-------------------
             var sut = typeof(Company);

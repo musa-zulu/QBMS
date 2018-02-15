@@ -27,7 +27,7 @@ namespace QBMS.Core.Tests.Domain
         [TestCase("M_OR_S", typeof(string))]
         [TestCase("CompanyId", typeof(int))]
         [TestCase("Company", typeof(Company))]
-        public void Client_Property_ShouldExist(string propertyName, Type propertyType)
+        public void Invoice_Property_ShouldExist(string propertyName, Type propertyType)
         {
             //---------------Set up test pack-------------------
             var sut = typeof(Invoice);

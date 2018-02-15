@@ -22,7 +22,7 @@ namespace QBMS.Core.Tests.Domain
         [TestCase("DateQuoted", typeof(DateTime))]
         [TestCase("DateAccepted", typeof(DateTime?))]
 
-        public void Client_Property_ShouldExist(string propertyName, Type propertyType)
+        public void ClientsQuoteItem_Property_ShouldExist(string propertyName, Type propertyType)
         {
             //---------------Set up test pack-------------------
             var sut = typeof(ClientsQuoteItem);
